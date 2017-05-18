@@ -1,0 +1,148 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_play_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="#2d353c"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/iv_play_back"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="@string/back"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:background="@drawable/search_background"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="课课家教育"
+            android:padding="20px"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/iv_play_search"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:text="@string/search"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:background="@drawable/search_background"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000">
+
+        <com.nuoxian.kokojia.utils.UniversalVideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:uvv_autoRotation="true"
+            app:uvv_fitXY="false" />
+
+        <com.nuoxian.kokojia.utils.UniversalMediaController
+            android:id="@+id/media_controller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:uvv_scalable="true" />
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_play_catalog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:paddingRight="70px"
+            android:paddingLeft="70px"
+            android:button="@null"
+            android:text="目录"
+            android:drawableLeft="@drawable/player_catalog"
+            android:textColor="@drawable/textcolor_blue_black"
+            android:checked="true"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#eaeaea"/>
+
+        <RadioButton
+            android:id="@+id/rb_play_discuss"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:paddingRight="70px"
+            android:paddingLeft="70px"
+            android:drawableLeft="@drawable/player_discuss"
+            android:button="@null"
+            android:text="讨论"
+            android:textColor="@drawable/textcolor_blue_black"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#eaeaea"/>
+
+        <RadioButton
+            android:id="@+id/rb_play_note"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:paddingRight="70px"
+            android:paddingLeft="70px"
+            android:drawableLeft="@drawable/player_note"
+            android:button="@null"
+            android:text="笔记"
+            android:textColor="@drawable/textcolor_blue_black"/>
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#eaeaea"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_play_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

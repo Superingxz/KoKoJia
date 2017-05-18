@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.nuoxian.kokojia.activity.DownLoadActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#2d353c"
+        >
+
+        <TextView
+            android:id="@+id/iv_download_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:text="@string/back"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@drawable/search_background"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="缓存列表"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_to_my_download"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="我的下载"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/download_refresh"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/greyearth150_150"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/refresh_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:text="网络不给力，点击重新加载"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/lv_download"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_all_check"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:gravity="center"
+            android:enabled="false"
+            android:background="@mipmap/course_tab_1"/>
+
+        <TextView
+            android:id="@+id/tv_start_download"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="下载"
+            android:gravity="center"
+            android:enabled="false"
+            android:background="@mipmap/course_tab_1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.nuoxian.kokojia.activity.RechargeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#2d353c"
+        >
+
+        <TextView
+            android:id="@+id/iv_recharge_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:background="@drawable/search_background"
+            android:text="@string/back"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="账户充值"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="61px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值账户：" />
+
+        <TextView
+            android:id="@+id/tv_recharge_user"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="账号" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="61px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户余额：" />
+
+        <TextView
+            android:id="@+id/tv_recharge_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="余额" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="61px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值金额：" />
+
+        <EditText
+            android:id="@+id/et_recharge_price"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:padding="5dp"
+            android:background="@drawable/regist_edittext_rectangle_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_recharge_pay_way"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="41px"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_recharge_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00aeef"
+        android:text="确认支付"
+        android:textColor="#fff" />
+
+</LinearLayout>

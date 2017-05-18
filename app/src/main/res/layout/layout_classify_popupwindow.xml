@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40474d"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_classify_popup_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="name"
+        android:textColor="#999"
+        />
+
+    <GridView
+        android:id="@+id/gv_classify_popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        />
+
+</com.zhy.autolayout.AutoLinearLayout>

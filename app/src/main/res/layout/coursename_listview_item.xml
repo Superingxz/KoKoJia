@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_coursename_coursetypename"
+            android:layout_marginTop="41px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="coursetypename"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_coursename_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41px"
+            android:textStyle="bold"
+            android:text="total"
+            android:textSize="15sp"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFA9A2A2"/>
+
+    <com.nuoxian.kokojia.view.SodukuGridView
+        android:id="@+id/gv_coursename_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:verticalSpacing="10dp"
+        android:numColumns="4"
+        />
+
+</com.zhy.autolayout.AutoLinearLayout>

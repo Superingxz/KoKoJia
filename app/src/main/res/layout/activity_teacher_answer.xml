@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.nuoxian.kokojia.activity.TeacherAnswerActivity">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="状态:"/>
+
+        <RadioGroup
+            android:id="@+id/rg_teacher_answer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_teacher_answer_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="全部"
+                android:gravity="center"
+                android:checked="true"
+                android:textColor="@drawable/text_color_gray_black"
+                android:background="@drawable/background_white_blue"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_teacher_answer_wait_reply"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="待回复"
+                android:gravity="center"
+                android:textColor="@drawable/text_color_gray_black"
+                android:background="@drawable/background_white_blue"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_teacher_answer_replyed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="已回复"
+                android:gravity="center"
+                android:textColor="@drawable/text_color_gray_black"
+                android:background="@drawable/background_white_blue"
+                />
+
+        </RadioGroup>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_teacher_answer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

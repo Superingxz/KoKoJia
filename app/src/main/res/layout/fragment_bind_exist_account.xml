@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="41px"
+        android:layout_marginRight="41px"
+        android:textColor="#fd9a34"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="41px"
+        android:layout_marginRight="41px"
+        android:background="@drawable/regist_edittext_selector"
+        android:drawableLeft="@mipmap/l_touxiang"
+        android:drawablePadding="10dp"
+        android:hint="请填写邮箱或手机号"
+        android:padding="10dp"
+        android:textColorHint="#d0d6d9" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="41px"
+        android:layout_marginRight="41px"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/regist_edittext_selector"
+        android:drawableLeft="@mipmap/l_suo"
+        android:drawablePadding="10dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="#d0d6d9" />
+
+    <TextView
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="41px"
+        android:layout_marginRight="41px"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="立即绑定"
+        android:textSize="18sp"
+        android:background="@drawable/rectangle_solid_blue"
+        android:textColor="#fff"
+        />
+
+</com.zhy.autolayout.AutoLinearLayout>

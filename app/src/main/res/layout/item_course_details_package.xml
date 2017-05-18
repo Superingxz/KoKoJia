@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_course_package"
+        android:layout_width="200px"
+        android:layout_height="151px"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/imgloading" />
+
+    <TextView
+        android:id="@+id/tv_course_package_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@id/iv_course_package"
+        android:layout_alignTop="@id/iv_course_package"
+        android:text="title"
+        android:textColor="#00b7b7" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_course_package"
+        android:layout_below="@id/tv_course_package_title"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="20px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_course_package_courseNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_course_package_classNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:textColor="#999"
+            android:textSize="12sp" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_below="@id/num"
+        android:layout_toRightOf="@id/iv_course_package"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_course_package_original_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_course_package_package_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:textColor="#999"
+            android:textSize="12sp" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

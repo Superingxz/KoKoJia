@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nuoxian.kokojia">
+
+    <!-- 显示Toast的权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 获取WiFi权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读写SD卡权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 获取上网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/kekejia_appicon20161019"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:icon">
+        <meta-data
+            android:name="design_width"
+            android:value="720" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <activity android:name=".activity.GuideActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 腾讯 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100587998" />
+            </intent-filter>
+        </activity>
+        <!-- 新浪微博 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PlayOnlineActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.DownLoadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginAndRegistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CourseDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyCourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyDownLoadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LocalVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ConfirmBuyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BalancePayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ThirdPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.RechargeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.MyOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.LocalPlayActivity" />
+        <activity
+            android:name=".activity.FindPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.BindAccountActivity" />
+        <activity
+            android:name=".activity.BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ManageCourseActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SellOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ManagePackageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PackageDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ServiceProvisionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SchoolIndexActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TeacherAnswerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TeacherAnswerDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CourseListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.ImageActivity" />
+        <activity
+            android:name=".activity.MyQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RefundActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RefundDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyCouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CreateCouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CreateCouponDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayCenterBalanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BindZFBActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GetMoneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SetPayPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UpdatePayPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ResetPayPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayCenterPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayCenterRechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayCenterRefundActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayCenterWithdrawalsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AllPackageActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.LimitTimeDiscountActivity" />
+        <activity android:name=".activity.FreeCourseActivity" />
+        <activity android:name=".activity.TestActivity" />
+    </application>
+
+</manifest>

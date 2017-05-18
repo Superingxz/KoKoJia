@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_calendar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#2d353c">
+
+        <TextView
+            android:id="@+id/tv_calendar_left"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:text="@string/back"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/search_background"/>
+
+        <TextView
+            android:id="@+id/tv_calendar_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_calendar_right"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:text="@string/right"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/search_background"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    
+    <com.nuoxian.kokojia.utils.CalendarView
+        android:id="@+id/cv_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC" />
+
+</com.zhy.autolayout.AutoLinearLayout>

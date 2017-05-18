@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_my_collect"
+        android:layout_width="200px"
+        android:layout_height="150px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/imgloading"
+        />
+
+    <TextView
+        android:id="@+id/tv_my_collect_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_my_collect"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/tv_my_collect_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_my_collect"
+        android:layout_below="@id/tv_my_collect_title"
+        android:textColor="#ff7112"/>
+
+    <TextView
+        android:id="@+id/tv_my_collect_discuss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_my_collect_price"
+        android:layout_below="@id/tv_my_collect_title"
+        android:textColor="#999"/>
+
+    <TextView
+        android:id="@+id/tv_my_collect_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_my_collect_discuss"
+        android:layout_below="@id/tv_my_collect_title"
+        android:textColor="#bf1a21"/>
+
+    <TextView
+        android:id="@+id/tv_my_collect_learn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/iv_my_collect"
+        android:layout_toRightOf="@id/iv_my_collect"
+        android:textColor="#999"
+        />
+
+</com.zhy.autolayout.AutoRelativeLayout>

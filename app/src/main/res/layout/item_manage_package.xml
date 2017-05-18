@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_manage_package_fragment"
+        android:layout_width="200px"
+        android:layout_height="151px"
+        android:src="@mipmap/imgloading"/>
+
+    <TextView
+        android:id="@+id/tv_manage_package_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_manage_package_fragment"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/tv_manage_package_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_manage_package_fragment"
+        android:layout_below="@id/tv_manage_package_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_manage_package_packageprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_manage_package_price"
+        android:layout_below="@id/tv_manage_package_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#f95c0d"/>
+
+    <TextView
+        android:id="@+id/tv_manage_package_class_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_manage_package_fragment"
+        android:layout_toRightOf="@id/iv_manage_package_fragment"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_manage_package_status_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_manage_package_class_num"
+        android:layout_alignBottom="@id/iv_manage_package_fragment"
+        />
+
+</com.zhy.autolayout.AutoRelativeLayout>

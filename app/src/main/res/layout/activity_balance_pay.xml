@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.nuoxian.kokojia.activity.BalancePayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#2d353c"
+        >
+
+        <TextView
+            android:id="@+id/iv_balance_pay_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="@string/back"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:background="@drawable/search_background"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="余额支付"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#f7f7f7"
+        >
+
+        <ImageView
+            android:id="@+id/iv_balance_pay"
+            android:layout_width="190px"
+            android:layout_height="128px"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/tv_balance_pay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="#494949"
+            android:layout_toRightOf="@id/iv_balance_pay"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_balance_pay_school_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_balance_pay_title"
+            android:layout_toRightOf="@id/iv_balance_pay"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#999999"
+            />
+
+        <TextView
+            android:id="@+id/tv_balance_pay_class_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_balance_pay"
+            android:layout_alignBottom="@id/iv_balance_pay"
+            android:layout_marginLeft="5dp"
+            android:textColor="#999999"
+            />
+
+        <TextView
+            android:id="@+id/tv_balance_pay_trial_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_balance_pay_class_num"
+            android:layout_alignBottom="@id/iv_balance_pay"
+            android:textColor="#999999"
+            android:layout_marginLeft="5dp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41px"
+        android:layout_marginLeft="10dp"
+        android:text="可用金额"/>
+
+    <TextView
+        android:id="@+id/tv_balance_pay_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="#ff7112"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61px"
+        android:layout_marginLeft="10dp"
+        android:text="您需要支付"/>
+
+    <TextView
+        android:id="@+id/tv_balance_pay_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="#ff7112"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="61px"
+        android:text="支付密码"/>
+
+    <EditText
+        android:id="@+id/et_balance_pay_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/regist_edittext_rectangle_gray"
+        android:layout_marginRight="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_balance_pay_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="余额支付"
+            android:textColor="#fff"
+            android:background="#00aeef"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

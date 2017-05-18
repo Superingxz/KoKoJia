@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.nuoxian.kokojia.activity.MyCourseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#2d353c"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的课程"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/iv_my_course_search"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:text="@string/search"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="@drawable/search_background"
+            />
+
+        <TextView
+            android:id="@+id/iv_my_course_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="@string/back"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:background="@drawable/search_background"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/loadding_faile_layout" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jingchen.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/layout_my_course_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/refresh_head" />
+
+            <com.jingchen.pulltorefresh.pullableview.PullableListView
+                android:id="@+id/lv_my_course"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include layout="@layout/load_more" />
+
+        </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+        <include layout="@layout/layout_no_content" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</LinearLayout>

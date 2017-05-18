@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_discuss_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#fff"
+    >
+
+    <ImageView
+        android:id="@+id/iv_discuss_group"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/imgloading" />
+
+    <TextView
+        android:id="@+id/tv_discuss_group_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_discuss_group"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_discuss_group_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_discuss_group"
+        android:layout_below="@id/tv_discuss_group_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_discuss_group_question"
+        android:layout_width="240px"
+        android:layout_height="140px"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_toRightOf="@id/iv_discuss_group"
+        android:layout_below="@id/tv_discuss_group_question"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/background_click_white_gray"
+        android:visibility="gone"
+        />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_discuss_group"
+        android:layout_below="@id/iv_discuss_group_question"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_discuss_group_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#999" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_discuss_group_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/background_click_white_gray"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reply"
+                android:textColor="#999" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="回复"
+                android:textColor="#999" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_discuss_group_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_toLeftOf="@id/ll_discuss_group_reply"
+            android:clickable="true"
+            android:background="@drawable/background_click_white_gray"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zan"
+                android:textColor="#999" />
+
+            <TextView
+                android:id="@+id/tv_discuss_group_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="赞"
+                android:textColor="#999" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.nuoxian.kokojia.view.NoScrollListview
+        android:id="@+id/lv_discuss_chirld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@id/iv_discuss_group"
+        android:layout_below="@id/ll"
+        />
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_sell_order"
+        android:layout_width="200px"
+        android:layout_height="151px"
+        android:src="@mipmap/imgloading"/>
+
+    <TextView
+        android:id="@+id/tv_sell_order_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_sell_order"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/tv_sell_order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_sell_order"
+        android:layout_below="@id/tv_sell_order_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#f95c0d"/>
+
+    <TextView
+        android:id="@+id/tv_sell_order_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_sell_order_price"
+        android:layout_below="@id/tv_sell_order_title"
+        />
+
+    <TextView
+        android:id="@+id/tv_sell_order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/iv_sell_order"
+        android:layout_toRightOf="@id/iv_sell_order"
+        />
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.nuoxian.kokojia.activity.HomeActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eaeaea"/>
+
+    <RadioGroup
+        android:id="@+id/rg_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="#fff"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/selector_home_rg"
+            android:text="精选"
+            android:textColor="@drawable/home_rg_text_color"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:background="#fff"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/selector_all_rg"
+            android:text="分类"
+            android:textColor="@drawable/home_rg_text_color"
+            android:textSize="14sp"
+            />
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:background="#fff"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/selector_mine_rg"
+            android:text="我的"
+            android:textColor="@drawable/home_rg_text_color"
+            android:textSize="14sp"
+            />
+        <RadioButton
+            android:id="@+id/rb_download"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:background="#fff"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/selector_download_rg"
+            android:text="下载"
+            android:textColor="@drawable/home_rg_text_color"
+            android:textSize="14sp"
+            />
+
+    </RadioGroup>
+
+</com.zhy.autolayout.AutoLinearLayout>

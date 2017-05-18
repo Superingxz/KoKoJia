@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item_free_course"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="20px">
+
+    <ImageView
+        android:id="@+id/iv_free_course"
+        android:layout_width="200px"
+        android:layout_height="151px"
+        android:src="@mipmap/imgloading"
+        android:scaleType="fitXY"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="151px"
+        android:layout_marginLeft="20px">
+
+        <TextView
+            android:id="@+id/tv_free_course_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#555"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/tv_free_course_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:layout_centerVertical="true"
+            android:text="免费"
+            android:textColor="#fff"
+            android:background="#edb51a"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/courseNum"
+                android:textColor="#999"/>
+
+            <TextView
+                android:id="@+id/tv_free_course_courseNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:textColor="#999"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="@string/user"
+                android:textColor="#999"/>
+
+            <TextView
+                android:id="@+id/tv_free_course_learn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:textColor="#999"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

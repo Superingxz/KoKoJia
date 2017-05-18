@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_course_ditails"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.nuoxian.kokojia.activity.CourseDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/course_refresh"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:src="@mipmap/greyearth150_150"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/course_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="网络不给力，点击重新加载"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/course_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+    <RelativeLayout
+        android:id="@+id/details_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#2d353c"
+        >
+
+        <TextView
+            android:id="@+id/iv_details_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="@drawable/search_background"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="课程详情"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/iv_details_search"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="@string/search"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="@drawable/search_background"
+            />
+
+    </RelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_width="match_parent"
+        android:layout_below="@id/details_titlebar"
+        android:layout_height="420px"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/imgloading"
+            android:clickable="true"
+            android:visibility="visible"
+            />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:background="#88000000"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="@string/courseNum"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/tv_course_details_classNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:text="@string/user"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/tv_course_details_learn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:textColor="#fff"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_details"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl_image"
+        android:background="#FFDFDEDE"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_details"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RadioGroup
+            android:id="@+id/rg_course_details"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_details_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/details_radiobutton_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="概述"
+                android:checked="true"
+                android:textColor="@drawable/details_radiobutton_text_color" />
+
+            <RadioButton
+                android:id="@+id/rb_details_lesson"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/details_radiobutton_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="目录"
+                android:textColor="@drawable/details_radiobutton_text_color" />
+
+            <RadioButton
+                android:id="@+id/rb_details_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/details_radiobutton_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="评价"
+                android:textColor="@drawable/details_radiobutton_text_color" />
+
+            <RadioButton
+                android:id="@+id/rb_details_discuss"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/details_radiobutton_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="讨论"
+                android:textColor="@drawable/details_radiobutton_text_color" />
+
+        </RadioGroup>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_course_details"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_course_details_share"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:layout_height="match_parent"
+                android:text="@string/share"
+                android:textColor="#999"
+                android:background="@drawable/background_click_white_gray"
+                />
+            
+            <TextView
+                android:id="@+id/tv_course_details_collect"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:clickable="true"
+                android:text="@string/collected"
+                android:textColor="#999"
+                android:background="@drawable/background_click_white_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_course_ditails_courseware"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/zip"
+                android:background="@drawable/background_click_white_gray"
+                />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/tv_details_download"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/background_click_white_gray"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/download"
+                    android:textColor="#494949"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="下载"
+                    android:textColor="#494949" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_details_buy_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@mipmap/course_tab_3"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

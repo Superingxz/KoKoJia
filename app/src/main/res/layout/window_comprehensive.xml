@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d353c"
+    android:paddingLeft="20px"
+    android:paddingRight="20px"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_comprehensive_comprehensive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="20px"
+        android:text="综合"
+        android:textColor="#fff"
+        android:background="@drawable/search_background"
+        />
+
+    <TextView
+        android:id="@+id/tv_comprehensive_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="20px"
+        android:text="最新"
+        android:textColor="#fff"
+        android:background="@drawable/search_background"
+        />
+
+    <TextView
+        android:id="@+id/tv_comprehensive_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="20px"
+        android:text="价格"
+        android:textColor="#fff"
+        android:background="@drawable/search_background"
+        />
+
+    <TextView
+        android:id="@+id/tv_comprehensive_popularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="20px"
+        android:text="人气"
+        android:textColor="#fff"
+        android:background="@drawable/search_background"
+        />
+
+</com.zhy.autolayout.AutoLinearLayout>

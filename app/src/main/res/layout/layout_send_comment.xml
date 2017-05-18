@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_send_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:gravity="center"
+        android:background="#2d353c"
+        android:text="发表评论"
+        android:textSize="16sp"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/tv_comment_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="40px"
+        android:textColor="@color/orange"
+        android:visibility="gone"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="给该课程打分:"
+            android:textColor="#666"/>
+
+        <TextView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:gravity="center"
+            android:text="@string/star"
+            android:clickable="true"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:gravity="center"
+            android:text="@string/star"
+            android:clickable="true"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:gravity="center"
+            android:text="@string/star"
+            android:clickable="true"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/star4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:gravity="center"
+            android:text="@string/star"
+            android:clickable="true"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/star5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:gravity="center"
+            android:text="@string/star"
+            android:clickable="true"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/tv_star_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:textColor="@color/orange"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <EditText
+        android:id="@+id/et_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:padding="20px"
+        android:maxLength="200"
+        android:hint="最多输入200个字"
+        android:textSize="14sp"
+        android:textColorHint="#999"
+        android:background="@drawable/regist_edittext_rectangle_gray"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="40px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_comment_cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"/>
+
+        <Button
+            android:id="@+id/btn_comment_comit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20px"
+            android:gravity="center"
+            android:text="提交"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

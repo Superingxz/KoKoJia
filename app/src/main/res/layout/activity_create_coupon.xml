@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.nuoxian.kokojia.activity.CreateCouponActivity">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_create_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="10dp"
+            android:text="+创建优惠券"
+            android:textColor="#fff"
+            android:background="@color/blue"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="创建并发布优惠券，可以帮助你在自有渠道和课课家教育推广付费课程，提升营收优惠额由发布方补贴，按用户实际支付金额进行分成"
+            android:textSize="12sp"
+            android:textColor="#999"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="状态:"
+            android:textColor="#000"/>
+
+        <RadioGroup
+            android:id="@+id/rg_teacher_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_teacher_coupon_all"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:button="@null"
+                android:text="全部"
+                android:checked="true"
+                android:textColor="@drawable/text_color_gray_black"
+                android:background="@drawable/background_white_blue"/>
+
+            <RadioButton
+                android:id="@+id/rb_teacher_coupon_unOverdue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:button="@null"
+                android:text="未过期"
+                android:textColor="@drawable/text_color_gray_black"
+                android:background="@drawable/background_white_blue"/>
+
+            <RadioButton
+                android:id="@+id/rb_teacher_coupon_overdued"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:button="@null"
+                android:text="已过期"
+                android:textColor="@drawable/text_color_gray_black"
+                android:background="@drawable/background_white_blue"/>
+
+            <RadioButton
+                android:id="@+id/rb_teacher_coupon_inside"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:button="@null"
+                android:text="站内券"
+                android:textColor="@drawable/text_color_gray_black"
+                android:background="@drawable/background_white_blue"/>
+
+            <RadioButton
+                android:id="@+id/rb_teacher_coupon_outside"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:button="@null"
+                android:text="站外券"
+                android:textColor="@drawable/text_color_gray_black"
+                android:background="@drawable/background_white_blue"/>
+
+        </RadioGroup>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_teacher_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

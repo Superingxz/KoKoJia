@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_all_package"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.nuoxian.kokojia.activity.AllPackageActivity">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="73px"
+        >
+
+        <TextView
+            android:id="@+id/tv_package"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="20px"
+            android:text="@string/managepackage"
+            android:textColor="#22bb9b"/>
+
+        <TextView
+            android:id="@+id/tv_package_classify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_package"
+            android:gravity="center"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:clickable="true"
+            android:text="全部套餐"
+            android:textColor="#555"
+            android:background="@drawable/background_click_white_gray"/>
+
+        <TextView
+            android:id="@+id/tv_classify_up_dowm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@id/tv_package_classify"
+            android:text="@string/caret_up"
+            android:textColor="#555"/>
+
+        <TextView
+            android:id="@+id/tv_comprehensive_up_down"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="20px"
+            android:text="@string/caret_up"
+            android:textColor="#555"/>
+
+        <TextView
+            android:id="@+id/tv_package_comprehensive"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:layout_toLeftOf="@id/tv_comprehensive_up_down"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="综合"
+            android:textColor="#555"
+            android:background="@drawable/background_click_white_gray"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#555"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jingchen.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/layout_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <include layout="@layout/refresh_head" />
+
+            <com.jingchen.pulltorefresh.pullableview.PullableListView
+                android:id="@+id/lv_all_package"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include layout="@layout/load_more" />
+
+        </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+        <include layout="@layout/layout_no_content" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

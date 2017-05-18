@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    /*
+        下载页面的空白提示页面
+    */
+
+    <ImageView
+        android:id="@+id/download_empty"
+        android:src="@mipmap/imgloading"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:onClick="empty_refresh"/>
+</LinearLayout>

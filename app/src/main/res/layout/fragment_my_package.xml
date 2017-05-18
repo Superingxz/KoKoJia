@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:focusableInTouchMode="true"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et_mypackage_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:hint="请输入课程标题"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:background="@drawable/regist_edittext_rectangle_gray"/>
+
+        <TextView
+            android:id="@+id/tv_mypackage_search"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:clickable="true"
+            android:text="搜索"
+            android:textColor="#fff"
+            android:background="#00aeef"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#555"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="状态:"/>
+
+        <RadioGroup
+            android:id="@+id/rg_my_package_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_all"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:button="@null"
+                android:text="全部"
+                android:checked="true"
+                android:textColor="@drawable/text_color_gray_black"
+                android:background="@drawable/background_white_blue"/>
+            <RadioButton
+                android:id="@+id/rb_selling"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:button="@null"
+                android:text="销售中"
+                android:textColor="@drawable/text_color_gray_black"
+                android:background="@drawable/background_white_blue"/>
+            <RadioButton
+                android:id="@+id/rb_pending_audit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:button="@null"
+                android:text="待审核"
+                android:textColor="@drawable/text_color_gray_black"
+                android:background="@drawable/background_white_blue"/>
+            <RadioButton
+                android:id="@+id/rb_stop_sell"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:button="@null"
+                android:text="已下架"
+                android:textColor="@drawable/text_color_gray_black"
+                android:background="@drawable/background_white_blue"/>
+
+        </RadioGroup>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#555"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_mypackage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

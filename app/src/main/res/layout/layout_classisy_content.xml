@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.nuoxian.kokojia.view.expandgridview.CustomGroup
+            android:id="@+id/tv_classify_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_classify_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_solid_gray2"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="查看全部课程"
+            android:textColor="#666"
+            android:textSize="18sp" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</ScrollView>
+

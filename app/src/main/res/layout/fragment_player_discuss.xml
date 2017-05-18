@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_fragment_player_discuss"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_player_sendtalking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="10px"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:gravity="center"
+        android:background="@drawable/rectangle_dash_pink"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_talking"
+            android:textColor="#ff9b9b"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发表讨论"
+            android:textColor="#ff9b9b"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jingchen.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/layout_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/refresh_head" />
+            <!-- 支持所有实现Pullable接口的View -->
+
+            <com.jingchen.pulltorefresh.pullableview.PullableListView
+                android:id="@+id/lv_player_discuss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <include layout="@layout/load_more" />
+
+        </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+        <include layout="@layout/layout_no_content" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

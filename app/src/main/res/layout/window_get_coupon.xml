@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50px"
+    android:gravity="center"
+    android:background="#88000000">
+
+    <ListView
+        android:id="@+id/lv_get_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="10px"
+        android:padding="20px"/>
+
+    <TextView
+        android:id="@+id/tv_get_coupon_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:clickable="true"
+        android:text="完成"
+        android:textColor="#fff"
+        android:background="#21BA85"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

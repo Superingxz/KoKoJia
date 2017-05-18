@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RadioGroup
+        android:id="@+id/rg_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_my_note"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:gravity="center"
+            android:button="@null"
+            android:text="我的笔记"
+            android:textColor="@drawable/manage_course_radiobutton_text_color"
+            android:checked="true"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#eaeaea" />
+
+        <RadioButton
+            android:id="@+id/rb_others_note"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:gravity="center"
+            android:button="@null"
+            android:text="同学的笔记"
+            android:textColor="@drawable/manage_course_radiobutton_text_color"/>
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#eaeaea" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

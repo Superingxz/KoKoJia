@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_home_listview_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="73px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_home_list_classify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:gravity="center"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:background="@drawable/background_click_white_gray">
+
+            <TextView
+                android:id="@+id/tv_home_list_classify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分类"
+                android:textColor="#555"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="@string/single_down"
+                android:textColor="#555"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_home_list_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:background="@drawable/background_click_white_gray">
+
+            <TextView
+                android:id="@+id/tv_home_list_difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部难度"
+                android:textColor="#555"/>
+
+            <TextView
+                android:id="@+id/tv_difficulty_up_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="@string/caret_up"
+                android:textColor="#555"
+                />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_home_list_comprehensive"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/ll_home_list_difficulty"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:gravity="center"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:background="@drawable/background_click_white_gray">
+
+            <TextView
+                android:id="@+id/tv_home_list_comprehensive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="综合"
+                android:textColor="#555"/>
+
+            <TextView
+                android:id="@+id/tv_comprehensive_up_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="@string/caret_up"
+                android:textColor="#555"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#eaeaea"/>
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/layout_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.jingchen.pulltorefresh.pullableview.PullableListView
+            android:id="@+id/lv_home_coursecontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/load_more" />
+
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

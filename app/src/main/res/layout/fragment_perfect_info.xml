@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_perfect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_perfect_info_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fd9a34"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/et_perfect_emaile_or_phone"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@drawable/regist_edittext_selector"
+        android:hint="请输入邮箱或手机号码"
+        android:textColorHint="#999"
+        />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_perfect_phone"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_perfect_code"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/regist_edittext_selector"/>
+
+        <TextView
+            android:id="@+id/tv_perfect_code"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="获取验证码"
+            android:textColor="#fff"
+            android:background="@drawable/rectangle_solid_orange"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <EditText
+        android:id="@+id/et_perfect_username"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/regist_edittext_selector"
+        android:hint="请设置昵称"
+        android:textColorHint="#999"
+        />
+
+    <EditText
+        android:id="@+id/et_perfect_password"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/regist_edittext_selector"
+        android:hint="请设置密码"
+        android:textColorHint="#999"
+        />
+
+    <EditText
+        android:id="@+id/et_perfect_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/regist_edittext_selector"
+        android:hint="确认密码"
+        android:textColorHint="#999"
+        />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_perfect_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_perfect_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checked"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="我已认真阅读并同意"
+                />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:id="@+id/tv_perfect_service_provision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:text="《课课家服务条款》"
+            android:textColor="#00AEEF"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:id="@+id/tv_perfect_regist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="立即注册"
+        android:textSize="18sp"
+        android:background="@drawable/rectangle_solid_blue"
+        android:textColor="#fff"
+        />
+
+</com.zhy.autolayout.AutoLinearLayout>

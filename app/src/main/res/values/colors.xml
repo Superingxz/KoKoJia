@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 播放器用到的颜色 -->
+    <color name="uvv_green">#ff50b100</color>
+    <color name="uvv_black">#ff000000</color>
+    <color name="uvv_light_gray">#ffF0F0F0</color>
+    <color name="uvv_gray">#ffbbbbbb</color>
+    <!-- listview用到的颜色 -->
+    <color name="unfocused">#fff</color>
+    <color name="pressed">#FFB3ABAB</color>
+    <!-- 我的界面点击的背景色 -->
+    <color name="mine_pressed">#f1faff</color>
+    <color name="mine_unpressed">#fff</color>
+
+    <color name="press_gray">#FFD6D6D6</color>
+
+    <color name="navpage">#FFE1E8EB</color>
+    <!-- 搜索按钮背景颜色 -->
+    <color name="search_press">#1e2830</color>
+    <color name="search_unpress">#2d353c</color>
+    <!-- 标题栏颜色-->
+    <color name="titlebar">#ff2d353c</color>
+
+    <color name="white">#fff</color>
+    <color name="blue">#00aeef</color>
+    <color name="blue_press">#FF00739E</color>
+    <color name="zan">#f0f2f3</color>
+    <color name="orange">#f95c0d</color>
+
+</resources>

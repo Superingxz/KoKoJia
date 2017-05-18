@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--提交订单-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f7f7"
+    android:fitsSystemWindows="true"
+    tools:context="com.nuoxian.kokojia.activity.ConfirmBuyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="#2d353c"
+        >
+
+        <TextView
+            android:id="@+id/iv_confirm_buy_back"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="@string/back"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:background="@drawable/search_background"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="提交订单"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        >
+        
+        <ImageView
+            android:id="@+id/iv_confirm_buy"
+            android:layout_width="190px"
+            android:layout_height="142px"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/imgloading"/>
+
+        <TextView
+            android:id="@+id/tv_confirm_buy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="#494949"
+            android:layout_toRightOf="@id/iv_confirm_buy"
+            android:layout_marginLeft="10px"/>
+
+        <TextView
+            android:id="@+id/tv_confirm_buy_school_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_confirm_buy_title"
+            android:layout_toRightOf="@id/iv_confirm_buy"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="10px"
+            android:textColor="#999999"
+            />
+
+        <TextView
+            android:id="@+id/tv_confirm_buy_class_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_confirm_buy"
+            android:layout_alignBottom="@id/iv_confirm_buy"
+            android:layout_marginLeft="10px"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:id="@+id/tv_confirm_buy_trial_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_confirm_buy_class_num"
+            android:layout_alignBottom="@id/iv_confirm_buy"
+            android:textColor="#999999"
+            android:layout_marginLeft="10px"
+            />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_confirm_preferential_code"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/regist_edittext_rectangle_gray"
+                android:drawableLeft="@mipmap/juan23_36"
+                android:drawablePadding="20px"
+                android:padding="20px"
+                android:maxLength="18"
+                android:textSize="14sp"
+                android:hint="请输入您的优惠码"
+                android:textColorHint="#999999"/>
+
+            <TextView
+                android:id="@+id/tv_comfirm_buy_select_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:padding="20px"
+                android:gravity="center"
+                android:text="选择我的优惠券"
+                android:clickable="true"
+                android:textColor="#fff"
+                android:background="@drawable/press_blue"
+                />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <EditText
+            android:id="@+id/et_confirm_phone"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/regist_edittext_rectangle_gray"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:padding="20px"
+            android:drawableLeft="@mipmap/quan23_36"
+            android:drawablePadding="20px"
+            android:inputType="number"
+            android:hint="请输入您的联系方式(选填)"
+            android:textSize="14sp"
+            android:textColorHint="#999999"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系我们"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#36BEFA"/>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="课课家客服QQ: 2698585038"/>
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="课课家客服电话: 020-83706095"/>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="课课家客服Email：kefu@kokojia.com"/>
+
+    <TextView
+        android:id="@+id/tv_coupon_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:visibility="gone"
+        android:textColor="@color/orange"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="您需支付"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:id="@+id/tv_confirm_buy_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#ff7112"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_confirm_buy_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="20px"
+        android:text="提交"
+        android:textColor="#fff"
+        android:background="#00aeef"/>
+
+</LinearLayout>
